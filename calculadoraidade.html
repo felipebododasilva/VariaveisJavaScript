@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let anoNascimento = parseInt(prompt("Digite o ano em que nasceu: "));
-        let anoAtual = parseInt(prompt("Digite o ano atual:"));
-        let idade = anoAtual-anoNascimento;
-        
-        alert("Você tem atualmente "+idade+" anos de idade")
+        let anoNascimento, anoatual, idade;
+        anoNascimento = parseInt(prompt("Digite o ano em que nasceu: "));
+        anoAtual = 2025;
+        idade = anoAtual - anoNascimento;
+        acompanhante = prompt("Você esta acompanhado ? Digite sim ou não")
+
+        if (idade >= 18) 
+        {
+            alert(+idade+ " anos, acesso liberado")
+            
+        }
+        else if (acompanhante = "sim") 
+        {
+            alert(+idade+ " anos, você é menor de idade, porem esta acompanhado e pode acessar o site")
+
+        }
+
+        else 
+        {
+            alert(+idade+ " anos, você é menor de idade e não pode acessar o site")
+        }
+
+    
+
+
+
 
     </script>
 </body>
+
 </html>

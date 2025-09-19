@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Média</title>
 </head>
+
 <body>
     <script>
-        let nota1 = parseFloat(prompt("Digite a nota 1: "));
-        let nota2 = parseFloat(prompt("Digite a nota 2: "));
-        let nota3 = parseFloat(prompt("Digite a nota 3: "));
-        let nota4 = parseFloat(prompt("Digite a nota 4: "));
-        let media = (nota1+nota2+nota3+nota4)/4;
-         alert("A media de notas é "+media+" ")
-
+        let nota1, nota2, nota3, nota4, media;
+        nota1 = parseFloat(prompt("Digite a nota 1: "));
+        nota2 = parseFloat(prompt("Digite a nota 2: "));
+        nota3 = parseFloat(prompt("Digite a nota 3: "));
+        nota4 = parseFloat(prompt("Digite a nota 4: "));
+        media = (nota1 + nota2 + nota3 + nota4) / 4;
         
-
-        alert(media.tofixed(2))
-
+        if (media <= 4) {
+            alert("Sua nota media é " + media.toFixed(2) + " voce foi Reprovado")
+        } else if (media >= 6) {
+            alert("Sua nota media é " + media.toFixed(2) + " voce foi Aprovado")
+        } else {
+            alert("Sua nota media é " + media.toFixed(2) + " voce esta de Recuperação")
+        }
     </script>
 
 </body>
+
 </html>
