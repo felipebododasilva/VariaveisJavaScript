@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pessoa1, pessoa2
+        pessoa1 = parseFloat(prompt("Digita a altura da primeira pessoa: "))
+        pessoa2 = parseFloat(prompt("Digita a altura da segunda pessoa: "))
+
+        if (isNaN(pessoa1) || isNaN(pessoa2)) {
+            alert("Você não digitou uma altura válida!")
+        } else if (pessoa1<pessoa2) {
+            alert("A Altura da primeira pessoa = "+pessoa1+ "m, é menor.")
+        } else if (pessoa1>pessoa2) {
+            alert("A altura da primeira pessoa =" +pessoa1+ "m, é maior")
+        } else if (pessoa1==pessoa2) {
+            alert("As alturas são iguais")
+        }
+    
+    
+        
+
+
+
+    </script>
+</body>
+</html>
